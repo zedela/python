@@ -1,0 +1,52 @@
+a="gamarjoba"
+for i in range(len(a)):
+   if (a[i]!="a"):
+    print(a[i])
+____________________________________________________________________________
+
+a="Giorgi"
+
+for i in range(len(a)):
+   if (a[i]!="o" and i%2==1):
+    print(i,a[i])
+
+____________________________________________________________________________
+
+
+for i in "Hello World":
+    print(i)
+____________________________________________________________________________
+
+count=0
+a=input("sheiyvane sityva: ")
+for i in range(len(a)):
+    if(a[i] == "a" or a[i]=="e" or a[i]=="i" or a[i]=="o" or a[i]=="u"):
+        count=count+1
+        print(a[i],count)
+____________________________________________________________________________
+
+count=0
+a=input("sheiyvane sityva: ")
+for i in a:
+    if(i == "a" or i=="e" or i=="i" or i=="o" or i=="u"):
+        count=count+1
+        print(i,count)
+____________________________________________________________________________
+
+a=input("sheiyvane sityva:")
+b=" "
+for i in a :
+    if (i=="a"or i=="e" or i=="i" or i=="o" or i=="u"): 
+        continue
+    else: b=b+i
+       
+print(b)
+____________________________________________________________________________
+
+a=input("sheiyvane sityva:")
+b=" "
+for i in a :
+    if (i=="o"): 
+        b=b+"*"
+    else: b=b+i
+print(b)

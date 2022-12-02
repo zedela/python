@@ -1,0 +1,94 @@
+a=input("Enter Word: ")
+for i in range(0,len(a)):
+    b=i+1
+print("I > 0 da <",b)
+i=int(input("Enter I: "))
+print("J <=",b," da J > 0")
+j=int(input("Enter J: "))
+print(a[i:j])
+
+______________________________________________________
+
+a=input("Enter Word: ")
+i=0
+while i<len(a):
+    i+=1
+    print(a[i:i+3])
+
+______________________________________________________
+
+a=input("Enter Text: ")
+b=a[::-1]
+if a==a[::-1]:
+    print("It Is Palindrom")
+else:
+    print("It Is Not Palindrom")
+
+______________________________________________________
+
+a = "135757531"
+pat = "57"
+count = 0
+i = 0
+while i < len(a):
+    i+=1
+    if a[i:i+len(pat)] == "57":
+        count = count + 1
+print(count)
+ 
+______________________________________________________
+
+def jami(a,b):
+    sum = 0
+    for i in range(a,b):
+        sum = sum + i
+    return(sum)
+print(jami(0,100))
+
+______________________________________________________
+
+import random
+rand = random.randrange(0,2)
+print(rand)
+def jami(a,b):
+    sum = 0
+    for i in range(a,b):
+        sum = sum + i
+    return(sum)
+    
+if rand == 0:
+    print(jami(0,50))
+else: 
+    print(jami(0,100))
+
+______________________________________________________
+
+def namravli(a,b):
+    nam = 1
+    for i in range(a,b):
+        nam *= i
+    return(nam)
+print(namravli(1,6))
+
+______________________________________________________
+
+import random
+rand = random.randrange(0,2)
+print(rand)
+
+def jami(a,b):
+    sum = 0
+    for i in range(a,b):
+        sum = sum + i
+    return(sum)
+    
+def namravli(a,b):
+    nam = 1
+    for i in range(a,b):
+        nam = nam * i
+    return(nam)
+
+if rand == 0:
+    print(jami(1,11))
+else: 
+    print(namravli(1,11))

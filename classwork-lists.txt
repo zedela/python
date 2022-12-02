@@ -1,0 +1,95 @@
+import random
+mylist=list()
+luwebi=list()
+kentebi=list()
+
+for i in range(20):
+
+    mylist.append(random.randrange(0,100))
+
+minimal = mylist[0]
+for i in mylist:
+    if i<minimal:
+        minimal=i
+
+maximal = mylist[0]
+for i in mylist:
+    if i>maximal:
+        maximal=i
+
+for i in mylist:
+    if i%2==0:
+        luwebi.append(i)
+    else:
+        kentebi.append(i)
+
+
+print("listi: ",mylist)
+print("luwebi: ",luwebi)
+print("kentebi: ",kentebi)
+print("luwebis jami: ",sum(luwebi))
+print("kentebis jami: ",sum(kentebi))
+print("max: ",max(mylist))
+print("min: ",min(mylist))
+print("(fun) max: ",maximal)
+print("(fun) min: ",minimal)
+
+_____________________________________________________________________
+
+a=["hello", "good", "bad", "bull"]
+for i in a:
+    if i[0]=="b" or "l" in i:
+        print(i)
+
+_____________________________________________________________________
+
+import random
+
+a=list()
+luwebi=list()
+kentebi=list()
+KentIndexLuwebi=list()
+
+for i in range(20):
+    a.append(random.randrange(0,100))
+
+for i in range(len(a)):
+    if i%2==0:
+        luwebi.append(a[i])
+    else:
+        kentebi.append(a[i])
+        if a[i]%2==0:
+            KentIndexLuwebi.append(a[i])
+
+print("listi: ",a)
+print("luwi index: ",luwebi)
+print("kenti index: ",kentebi)
+print("KentIndexLuwebi: ",KentIndexLuwebi)
+
+_____________________________________________________________________
+
+a=[2,4,6,8,9]
+b=[3,5,7,0,1]
+new=list()
+for i in range(len(a)):
+
+    new.append(a[i]+b[i])
+
+print(new)
+
+_____________________________________________________________________
+
+import random
+n=5
+m=5
+matrix=[]
+for i in range(n): #interate over matrix's vectors
+    vector=[]
+    for j in range(m): #iterate over vectors elements
+        vector.append(random.randrange(100))
+    matrix.append(vector)
+print(matrix)
+
+
+
+

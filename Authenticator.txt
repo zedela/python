@@ -1,0 +1,11 @@
+password = input("Enter Password: ")
+i = 1
+if password=="password":
+        print("You are Auntheticated")
+else:
+    while i<5:
+        i+=1
+        print("Wrong Password")
+        password = input("Enter Password: ")
+        
+print("You Are Out Of Tries")

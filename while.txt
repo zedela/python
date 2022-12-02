@@ -1,0 +1,61 @@
+a=input("sheiyvane sheni saxeli: ")
+i=0
+while i<10:
+    i+=1
+    print(a)
+_______________________________________________________
+
+import random
+b=random.randrange(0,10)
+a=input("sheiyvane sheni saxeli: ")
+i=0
+print("amdenjer iprinteba:",b)
+while i<b:
+    i+=1
+    print(a)
+
+_______________________________________________________
+
+import random
+a=random.randrange(0,100)
+i=0
+print("randomia: ",a)
+while i<a:
+    i+=1
+    if i%13==0:
+        print(i)
+
+_______________________________________________________
+
+i=0
+jami=0
+while i<10:
+    jami=jami+i
+    i+=1
+print(jami)
+
+_______________________________________________________
+
+import random  
+a=random.randrange(0,100)
+i=0
+jami=0
+print("random:",a)
+while i<a:
+    if i%2==0:
+        jami=jami+i
+        i+=1
+    i+=1
+print(jami)
+
+_______________________________________________________
+
+password = input("Enter Password: ")
+while password!="password":
+    print("Wrong Password")
+    password = input("Enter Password: ")
+else: print("You Are Authenticated")
+
+_______________________________________________________
+
+

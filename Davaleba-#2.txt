@@ -1,0 +1,74 @@
+I
+
+import random
+
+a = random.randrange(0, 2)
+print("Random Number: ",a)
+c = ""
+b = input("Enter Word: ")
+
+if a == 1:
+    for i in b:
+        if i == "y":
+            continue
+        else:
+            c = c+i
+    print("sigrdze: ",len(c))
+    print(c)
+
+else:
+    if "o" in b:
+        print("o exists")
+    else:
+        print("o doesnt exists")
+    print(len(b))
+
+___________________________________________________________
+
+II
+
+a=input("Enter Word:")
+b=0
+while b<5:
+    a = input("Enter Word:")
+    for i in a:
+        if i == "d":
+            b = b + 1
+    if b>=5:
+        print("bevria")
+___________________________________________________________
+
+III
+
+def check(a):
+    c = ""
+    b = a[::-1]
+    if a == a[::-1]:
+        for i in a:
+            d = int(i)
+            if d % 2 == 0:
+                f = str(d)
+                c = c + f
+        return(c)
+    else:
+        for i in a:
+            d = int(i)
+            if d % 2 == 1:
+                f = str(d)
+                c = c + f
+        return(c)
+print(check("123456787654321"))
+___________________________________________________________
+
+IV
+
+def count(a):
+    pat = "53"
+    count = 0
+    i = 0
+    while i < len(a):
+        i+=1
+        if a[i:i+len(pat)] == "53":
+            count = count + 1
+    return("am ricxvis raodenoba", count)
+print(count("1235353123"))
